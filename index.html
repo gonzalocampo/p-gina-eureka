@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Academia Eureka: programación, matemáticas y ciencia con clases prácticas y grupos reducidos." />
+		<title>Inicio | Academia Eureka</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&display=swap" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<script src="/java script/datos-curiosos-1.js" defer></script>
+		<script src="/java script/script.js" defer></script>
+	</head>
+	<body class="inicio">
+		<a class="saltar" href="#contenido">Saltar al contenido</a>
+		<header class="cabecera">
+			<a class="logo" href="/index.html">🔬 Academia Eureka</a>
+			<nav aria-label="Principal"><ul id="menu"></ul></nav>
+			<button id="btn-modo" class="btn-modo" type="button">🌙 Modo oscuro</button>
+		</header>
+
+		<main id="contenido">
+			<section class="portada">
+				<div class="contenedor">
+					<div class="portada-texto">
+						<h1>Cada número esconde un descubrimiento</h1>
+						<p>
+							En Academia Eureka ofrecemos programas de estudio de programación, matemáticas y ciencia. Clases prácticas, grupos reducidos y herramientas propias para aprender jugando.
+						</p>
+						<a class="boton" href="/pages/programas.html">Ver programas</a>
+						<a class="boton boton-claro" href="/pages/calculadora.html">Probar la calculadora</a>
+					</div>
+					<div class="ruleta">
+						<div id="ruleta-num" class="ruleta-num">0</div>
+						<p id="ruleta-dato" class="ruleta-dato" aria-live="polite"></p>
+						<button id="ruleta-btn" class="boton" type="button">Descubrir otro número</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="cifras" aria-label="Academia Eureka en cifras">
+				<div class="contenedor cifras-fila">
+					<p><strong data-meta="5000">0</strong> datos curiosos de ciencia</p>
+					<p><strong data-meta="12">0</strong> alumnos como máximo por clase</p>
+					<p><strong data-meta="4">0</strong> programas de estudio</p>
+				</div>
+			</section>
+
+			<section class="seccion">
+				<div class="contenedor">
+					<h2 class="revelar">¿Por qué estudiar con nosotros?</h2>
+					<div class="rejilla revelar">
+						<article class="tarjeta tilt">
+							<h3>Aprendizaje práctico</h3>
+							<p>Cada tema termina con un pequeño proyecto para que lo pruebes tú mismo.</p>
+						</article>
+						<article class="tarjeta tilt">
+							<h3>Grupos reducidos</h3>
+							<p>Máximo 12 alumnos por clase para que ningún profesor te pierda de vista.</p>
+						</article>
+						<article class="tarjeta tilt">
+							<h3>Recursos propios</h3>
+							<p>Usa nuestras herramientas online, como la calculadora de datos curiosos.</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="seccion seccion-alt">
+				<div class="contenedor">
+					<h2 class="revelar">Nuestros programas</h2>
+					<div class="rejilla revelar">
+						<article class="tarjeta tilt prog">
+							<span aria-hidden="true">💻</span>
+							<h3>Programación web</h3>
+							<p>HTML, CSS y JavaScript.</p>
+						</article>
+						<article class="tarjeta tilt prog">
+							<span aria-hidden="true">🐍</span>
+							<h3>Python</h3>
+							<p>Para principiantes.</p>
+						</article>
+						<article class="tarjeta tilt prog">
+							<span aria-hidden="true">📐</span>
+							<h3>Matemáticas y lógica</h3>
+							<p>Razonar paso a paso.</p>
+						</article>
+						<article class="tarjeta tilt prog">
+							<span aria-hidden="true">🔭</span>
+							<h3>Ciencia y divulgación</h3>
+							<p>Curiosidad con método.</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="seccion" aria-labelledby="titulo-video">
+				<div class="contenedor">
+					<h2 id="titulo-video" class="revelar">Ciencia en vídeo</h2>
+					<p id="desc-video">Mientras practicas con la calculadora, descubre más curiosidades de ciencia con este vídeo.</p>
+					<figure class="video-figura revelar">
+						<div class="video-caja">
+							<iframe
+								src="https://www.youtube-nocookie.com/embed/t4oplnW0Bv0"
+								title="Vídeo de ciencia y curiosidades (YouTube)"
+								aria-describedby="desc-video"
+								lang="es"
+								loading="lazy"
+								allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+								referrerpolicy="strict-origin-when-cross-origin"
+							></iframe>
+						</div>
+						<figcaption>Vídeo de ciencia y curiosidades. Usa Tab y Enter o Espacio para reproducirlo y activa los subtítulos desde el reproductor.</figcaption>
+					</figure>
+					<p class="video-enlace">
+						¿No se ve el vídeo?
+						<a href="https://youtu.be/t4oplnW0Bv0" target="_blank" rel="noopener noreferrer"
+							>Míralo directamente en YouTube<span class="solo-lectores"> (se abre en una pestaña nueva)</span></a
+						>.
+					</p>
+				</div>
+			</section>
+
+			<section class="seccion">
+				<div class="contenedor">
+					<div class="destacado revelar">
+						<h2>La calculadora de datos curiosos</h2>
+						<p>Haz una operación. Si el resultado es un número entero del 1 al 5000, descubrirás un dato curioso de ciencia. ¡Hay 5000 distintos!</p>
+						<a class="boton" href="/pages/calculadora.html">Ir a la calculadora</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="pie">
+			<p>© 2026 Academia Eureka · Aprender es descubrir · info@academiaeureka.example</p>
+		</footer>
+	</body>
+</html>

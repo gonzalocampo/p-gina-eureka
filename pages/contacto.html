@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Contacta con Academia Eureka para resolver tus dudas sobre los programas." />
+		<title>Contacto | Academia Eureka</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&display=swap" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<script src="/java script/script.js" defer></script>
+	</head>
+	<body>
+		<a class="saltar" href="#contenido">Saltar al contenido</a>
+		<!-- Cabecera: el menú se rellena desde "java script/script.js" -->
+		<header class="cabecera">
+			<a class="logo" href="/index.html">🔬 Academia Eureka</a>
+			<nav aria-label="Principal"><ul id="menu"></ul></nav>
+			<button id="btn-modo" class="btn-modo" type="button">🌙 Modo oscuro</button>
+		</header>
+
+		<main id="contenido">
+			<section class="bloque">
+				<h1>Contacto</h1>
+				<p>¿Tienes dudas sobre algún programa? Escríbenos y te respondemos en 24 horas.</p>
+			</section>
+			<section class="bloque">
+				<form id="formulario" class="formulario" novalidate>
+					<div class="campo">
+						<label for="nombre">Nombre</label>
+						<input type="text" id="nombre" placeholder="Tu nombre" autocomplete="name" aria-describedby="error-nombre" />
+						<span class="error" id="error-nombre" aria-live="polite"></span>
+					</div>
+					<div class="campo">
+						<label for="email">Email</label>
+						<input type="email" id="email" placeholder="tucorreo@ejemplo.com" autocomplete="email" aria-describedby="error-email" />
+						<span class="error" id="error-email" aria-live="polite"></span>
+					</div>
+					<div class="campo">
+						<label for="telefono">Teléfono</label>
+						<input type="tel" id="telefono" placeholder="612345678" autocomplete="tel" aria-describedby="error-telefono" />
+						<span class="error" id="error-telefono" aria-live="polite"></span>
+					</div>
+					<div class="campo">
+						<label for="motivo">Motivo de contacto</label>
+						<select id="motivo" aria-describedby="error-motivo">
+							<option value="">Selecciona un motivo</option>
+							<option>Información de programas</option>
+							<option>Matrícula</option>
+							<option>Precios</option>
+							<option>Otro</option>
+						</select>
+						<span class="error" id="error-motivo" aria-live="polite"></span>
+					</div>
+					<div class="campo">
+						<label for="mensaje">Mensaje (mínimo 20 caracteres)</label>
+						<textarea id="mensaje" rows="5" maxlength="300" placeholder="Cuéntanos qué necesitas" aria-describedby="contador error-mensaje"></textarea>
+						<span class="contador" id="contador">0 / 300</span>
+						<span class="error" id="error-mensaje" aria-live="polite"></span>
+					</div>
+					<div class="campo">
+						<label class="check"><input type="checkbox" id="acepto" aria-describedby="error-acepto" /> Acepto la política de privacidad</label>
+						<span class="error" id="error-acepto" aria-live="polite"></span>
+					</div>
+					<button class="boton" type="submit">Enviar</button>
+					<p id="resultado" class="resultado" role="status"></p>
+				</form>
+			</section>
+		</main>
+
+		<footer class="pie">
+			<p>© 2026 Academia Eureka · Aprender es descubrir · info@academiaeureka.example</p>
+		</footer>
+	</body>
+</html>

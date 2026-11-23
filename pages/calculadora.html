@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Calculadora de Academia Eureka: cada resultado del 1 al 5000 revela un dato curioso de ciencia." />
+		<title>Calculadora | Academia Eureka</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&display=swap" />
+		<link rel="stylesheet" href="/css/style.css" />
+		<script src="/java script/script.js" defer></script>
+		<script src="/java script/datos-curiosos-1.js" defer></script>
+		<script src="/java script/datos-curiosos-2.js" defer></script>
+		<script src="/java script/datos-curiosos-3.js" defer></script>
+		<script src="/java script/datos-curiosos-4.js" defer></script>
+		<script src="/java script/datos-curiosos-6-al-10.js" defer></script>
+		<script src="/java script/calculadora.js" defer></script>
+	</head>
+	<body>
+		<a class="saltar" href="#contenido">Saltar al contenido</a>
+		<!-- Cabecera: el menú se rellena desde "java script/script.js" -->
+		<header class="cabecera">
+			<a class="logo" href="/index.html">🔬 Academia Eureka</a>
+			<nav aria-label="Principal"><ul id="menu"></ul></nav>
+			<button id="btn-modo" class="btn-modo" type="button">🌙 Modo oscuro</button>
+		</header>
+
+		<main id="contenido">
+			<section class="bloque">
+				<h1>Calculadora de datos curiosos</h1>
+				<p>Haz una operación y, si el resultado es un número del 1 al 5000, ¡te contamos un dato curioso de ciencia! Si el resultado tiene decimales, usamos su parte entera.</p>
+			</section>
+
+			<section class="calc-zona">
+				<article class="calculadora" aria-label="Calculadora">
+					<p id="operacion" class="operacion" aria-hidden="true"></p>
+					<div id="pantalla" class="pantalla" role="status" aria-label="Pantalla">0</div>
+					<div class="teclas">
+						<button type="button" class="tecla tecla-esp" data-tipo="limpiar" aria-label="Borrar todo">C</button>
+						<button type="button" class="tecla tecla-esp" data-tipo="borrar" aria-label="Borrar la última cifra">⌫</button>
+						<button type="button" class="tecla tecla-op" data-tipo="op" aria-label="dividir">÷</button>
+						<button type="button" class="tecla tecla-op" data-tipo="op" aria-label="multiplicar">×</button>
+						<button type="button" class="tecla" data-tipo="num">7</button>
+						<button type="button" class="tecla" data-tipo="num">8</button>
+						<button type="button" class="tecla" data-tipo="num">9</button>
+						<button type="button" class="tecla tecla-op" data-tipo="op" aria-label="restar">−</button>
+						<button type="button" class="tecla" data-tipo="num">4</button>
+						<button type="button" class="tecla" data-tipo="num">5</button>
+						<button type="button" class="tecla" data-tipo="num">6</button>
+						<button type="button" class="tecla tecla-op" data-tipo="op" aria-label="sumar">+</button>
+						<button type="button" class="tecla" data-tipo="num">1</button>
+						<button type="button" class="tecla" data-tipo="num">2</button>
+						<button type="button" class="tecla" data-tipo="num">3</button>
+						<button type="button" class="tecla tecla-igual" data-tipo="igual" aria-label="igual">=</button>
+						<button type="button" class="tecla tecla-cero" data-tipo="num">0</button>
+						<button type="button" class="tecla" data-tipo="num" aria-label="coma decimal">.</button>
+					</div>
+				</article>
+
+				<article class="caja-dato" id="caja-dato" aria-live="polite">
+					<h2>Dato curioso</h2>
+					<p id="dato-etiqueta" class="etiqueta"></p>
+					<p id="dato-texto">Todavía no hay resultado. Prueba con un número del 1 al 5000.</p>
+				</article>
+			</section>
+
+			<section class="bloque">
+				<h2>Cómo usarla</h2>
+				<ol class="lista">
+					<li>Pulsa números y una operación (+, −, ×, ÷).</li>
+					<li>Pulsa = para ver el resultado.</li>
+					<li>Si el resultado es un número entre 1 y 5000, aparece su dato curioso.</li>
+					<li>Pulsa C para empezar de nuevo o ⌫ para borrar la última cifra. También puedes usar el teclado.</li>
+				</ol>
+			</section>
+		</main>
+
+		<footer class="pie">
+			<p>© 2026 Academia Eureka · Aprender es descubrir · info@academiaeureka.example</p>
+		</footer>
+	</body>
+</html>
